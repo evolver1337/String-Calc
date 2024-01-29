@@ -46,8 +46,8 @@ public class StringCalc {
             printInQuotes(result);
         } else if (action == '-') {
             int index = data[0].indexOf(data[1]);
-            if (index == -1) {
-                throw new Exception("Введите значение от 1 до 10");
+            if(index == -1){
+                printInQuotes(data[0]);
             } else {
                 String result = data[0].substring(0, index);
                 result += data[0].substring(index + data[1].length());
