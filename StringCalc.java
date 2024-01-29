@@ -22,8 +22,8 @@ public class StringCalc {
         } else {
             throw new Exception("Некорректный знак действия");
         }
-        if (data[0].length() > 10 || data[0].length() < 0 || data[1].length() > 10 || data[1].length() < 0) {
-            throw new Exception("Введите не более 10 символов");
+        if (data[0].length() > 10 || data[0].length() < 1 || data[1].length() > 10 || data[1].length() < 1) {
+            throw new Exception("Введите от 1 до 10 символов");
         }
         if (action == '*' || action == '/') {
             if (data[1].contains("\"")) throw new Exception("Строчку можно делить или умножать только на число");
